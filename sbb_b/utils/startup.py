@@ -93,8 +93,8 @@ async def startupmessage():
         if BOTLOG:
             Config.JMTHONLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/61536e1bc997216d4fe88.jpg",
-                caption="⎊ بــوت الـخلـيفـه يـعـمـل بـنـجـاح  **\n\n** ارسل `.الاوامر` لرؤية اوامر السورس**\n\n** قـنـاة سـورس الخليفه @ZZZ7iZ",
+                "https://telegra.ph/file/5581d81211955ec26c13b.jpg",
+                caption=" بــوت الـخلـيفـه يـعـمـل بـنـجـاح  **\n\n** ارسل `.الاوامر` لرؤية اوامر السورس**\n\n** قـنـاة سـورس الخليفه @ZZZ7iZ",
                 buttons=[(Button.url(" ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ ", "https://t.me/ZZZ7iZ"),)],
             )
     except Exception as e:
