@@ -36,7 +36,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "‌‎⿻┊‌‎‌‎"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "[• 父 ✓ ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ🝣 ✓ 父 •](t.me/ZZZ7iZ)**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "[• 父 ✓ ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ🝣 父 •](t.me/ZZZ7iZ)**"
     JMTHON_IMG = gvarstatus("ALIVE_PIC")
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
@@ -100,7 +100,7 @@ async def repo(event):
     await event.delete()
 
 
-ROZ_PIC = "https://telegra.ph/file/61536e1bc997216d4fe88.jpg"
+ROZ_PIC = "https://telegra.ph/file/5581d81211955ec26c13b.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**⎊ بوت الخليفه يعمل بنجاح 🤍،**\n"
