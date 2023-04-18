@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/5a8497c00a8ce84eb97f8.jpg"
+CATLOGO = "https://telegra.ph/file/61536e1bc997216d4fe88.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧ᥉ρᎥժᥱᖇⵧⵧⵧⵧⵧ⍣**\n[᥉ρᎥժᥱᖇ ᴜsᴇʀʙᴏᴛ ♥](https://t.me/EE_20)\n\n"
+    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧ• 𝗖𝗔𝗟𝗜𝗣𝗛 •ⵧⵧⵧⵧⵧ⍣**\n[ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ](https://t.me/ZZZ7iZ)\n\n"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -229,7 +229,7 @@ async def inline_handler(event):
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("DEV", "https://t.me/Tepthone"),
+                    Button.url("DEV", "https://t.me/ZZZ7iZ"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -422,7 +422,7 @@ async def inline_handler(event):
             _result = main_menu()
             result = builder.article(
                 title="sbb_b Help™",
-                description="**▾∮ قائمة التعليمات الخاصة ب تيبثون **",
+                description="**▾∮ قائمة التعليمات الخاصة ب الخليفه **",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -558,10 +558,10 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("قناة السورس", "t.me/Tepthone"),
+                Button.url("قناة السورس", "t.me/ZZZ7iZ"),
                 Button.url(
                     "المطور",
-                    "t.me/PPF22",
+                    "t.me/H_M_Dr",
                 ),
             )
         ]
@@ -570,14 +570,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "لجعل تيبثون من نصيبك!", "md"
+            "لجعل الخليفه من نصيبك!", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[𝙏𝙀𝙋𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/Tepthone)",
+            title="[ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ](https://t.me/ZZZ7iZ)",
             description="لتنصيبه لك",
-            url="t.me/Tepthone",
+            url="t.me/ZZZ7iZ",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
