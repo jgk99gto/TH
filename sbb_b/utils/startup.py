@@ -26,7 +26,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد سبايدر")
+LOGS = logging.getLogger("اعداد الخليفه")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -54,9 +54,9 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await sbb_b(JoinChannelRequest("@EE_20"))
-        await sbb_b(JoinChannelRequest("@EE_20"))
-        await sbb_b(JoinChannelRequest("@EE_20"))
+        await sbb_b(JoinChannelRequest("@ZZZ7iZ"))
+        await sbb_b(JoinChannelRequest("@ZZZ7iZ"))
+        await sbb_b(JoinChannelRequest("@ZZZ7iZ"))
     except BaseException:
         pass
 
@@ -68,7 +68,7 @@ async def mybot():
     f"ـ {rz_ment}"
     f"⪼ هذا هو بوت خاص بـ {rz_ment} يمكنك التواصل معه هنا"
     starkbot = await sbb_b.tgbot.get_me()
-    perf = "[  بـدأ سـورس سـبـايـدر ]"
+    perf = "[  بـدأ سـورس الخليفه @ZZZ7iZ ]"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
@@ -93,9 +93,9 @@ async def startupmessage():
         if BOTLOG:
             Config.JMTHONLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/b29c81c4e10cb4f7345d7.jpg",
-                caption="⎊ بــوت سـبايـدر يـعـمـل بـنـجـاح  **\n\n**⎊ ارسل `.الاوامر` لرؤية اوامر السورس**\n\n**⎊ قـنـاة سـورس سـبايـدر @EE_20",
-                buttons=[(Button.url("𓏺 ᥉᥆υᖇᥴᥱ ᥉ρᎥժᥱᖇ . 🕷 ˼", "https://t.me/EE_20"),)],
+                "https://telegra.ph/file/61536e1bc997216d4fe88.jpg",
+                caption="⎊ بــوت الـخلـيفـه يـعـمـل بـنـجـاح  **\n\n** ارسل `.الاوامر` لرؤية اوامر السورس**\n\n** قـنـاة سـورس الخليفه @ZZZ7iZ",
+                buttons=[(Button.url(" ѕᴏᴜʀᴄᴇ ᴄᴀʟɪᴘʜ ", "https://t.me/ZZZ7iZ"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -235,10 +235,10 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("هنالك خطا ما للتعرف على فار كروب الحفظ\n" + str(e))
     else:
-        descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
+        descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك اذا اردت فحذفها نهائيا 👍 𓆰."
         photobt = await sbb_b.upload_file(file="razan/pic/spider2.jpeg")
         _, groupid = await create_supergroup(
-            "جروب اشعارات سبايدر", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "اشعارات الخليفه", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الحفظ بنجاح")
@@ -260,10 +260,10 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error("حدث خطأ اثناء التعرف على كروب التخزين\n" + str(e))
     else:
-        descript = "⎊ لا تحذف او تغادر المجموعه وظيفتها حفظ رسائل التي تأتي على الخاص"
+        descript = " لا تحذف او تغادر المجموعه وظيفتها حفظ رسائل التي تأتي على الخاص"
         photobt = await sbb_b.upload_file(file="razan/pic/spider1.jpeg")
         _, groupid = await create_supergroup(
-            "جروب تخزين سبايدر", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "تخزين رسائل الخليفه", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تم عمل الكروب التخزين بنجاح واضافة الفارات اليه.")
