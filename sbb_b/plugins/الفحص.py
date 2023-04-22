@@ -99,7 +99,7 @@ async def repo(event):
     await event.delete()
 
 
-ROZ_PIC = "https://telegra.ph/file/61536e1bc997216d4fe88.jpg"
+ROZ_PIC = "https://telegra.ph/file/5581d81211955ec26c13b.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"** بـوت الخليفه يعمل بنجاح 🤍،**\n"
