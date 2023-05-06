@@ -23,7 +23,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await sbb_b.get_me()
-        if query.startswith("اوامري") and event.query.user_id == sbb_b.uid:
+        if query.startswith("الاوامر") and event.query.user_id == sbb_b.uid:
             buttons = [
                 [Button.inline("معلومات الخليفه ", data="AOMRDB")],
                 [
